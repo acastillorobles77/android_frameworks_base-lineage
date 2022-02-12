@@ -2607,4 +2607,8 @@
 
     <!-- Time format for the Dream Time Complication for 24-hour time format [CHAR LIMIT=NONE] -->
     <string name="dream_time_complication_24_hr_time_format">kk:mm</string>
+
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Recognizing face...</string>
+
 </resources>
