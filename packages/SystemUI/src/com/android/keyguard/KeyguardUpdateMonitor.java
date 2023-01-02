@@ -3746,8 +3746,6 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener, Dumpab
         return BIOMETRIC_LOCKOUT_RESET_DELAY_MS;
     }
 
-<<<<<<< HEAD
-=======
     class SettingsObserver extends ContentObserver {
         private ContentResolver mContentResolver;
         SettingsObserver(Handler handler) {
@@ -3810,7 +3808,7 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener, Dumpab
         }
     }
 
->>>>>>> feb024865582 ([1/2] Allow changing face unlock method when locked)
+
     /**
      * Unregister all listeners.
      */

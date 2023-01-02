@@ -136,7 +136,6 @@ open class KeyguardBypassController : Dumpable, StackScrollAlgorithm.BypassContr
             }
         })
 
-<<<<<<< HEAD
         val dismissByDefault = if (context.resources.getBoolean(
                         com.android.internal.R.bool.config_faceAuthDismissesKeyguard)) 1 else 0
         tunerService.addTunable(object : TunerService.Tunable {
@@ -144,7 +143,7 @@ open class KeyguardBypassController : Dumpable, StackScrollAlgorithm.BypassContr
                 bypassEnabled = tunerService.getValue(key, dismissByDefault) != 0
             }
         }, Settings.Secure.FACE_UNLOCK_DISMISSES_KEYGUARD)
-=======
+
         if (context.resources.getBoolean(
                 com.android.internal.R.bool.config_faceAuthOnlyOnSecurityView)){
             bypassEnabledBiometric = false
@@ -163,7 +162,7 @@ open class KeyguardBypassController : Dumpable, StackScrollAlgorithm.BypassContr
                 }
             }, Settings.Secure.FACE_UNLOCK_DISMISSES_KEYGUARD)
         }
->>>>>>> feb024865582 ([1/2] Allow changing face unlock method when locked)
+
         lockscreenUserManager.addUserChangedListener(
                 object : NotificationLockscreenUserManager.UserChangedListener {
                     override fun onUserChanged(userId: Int) {
