@@ -11019,8 +11019,6 @@ public final class Settings {
                 "extra_automatic_power_save_mode";
 
         /**
-<<<<<<< HEAD
-=======
          * Enable udfps detection even when screen is off
          * Default value is 0
          * @hide
